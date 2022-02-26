@@ -1,0 +1,44 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+    background-color: #F8EDEB;
+}
+
+.header {
+    font-size: 2em;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 2%;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    font-size: 1.2em;
+}
+
+.subheader {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 900px;
+}
+

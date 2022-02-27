@@ -9,8 +9,22 @@ body {
     background-color: #F8EDEB;
 }
 
-.header {
+h1 {
     font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1em;
+}
+
+.profilePhoto {
+    max-width: 35%;
+    height: auto;
 }
 
 header {
@@ -27,18 +41,14 @@ nav ul {
     font-size: 1.2em;
 }
 
-.subheader {
-    font-size: 1.5em;
-    font-weight: 400;
-}
-
-section {
-    padding: 100px 0;
-}
-
 .container {
     position: relative;
     margin: 0 auto;
     max-width: 900px;
+}
+
+section {
+    padding: 100px 10px;
+    margin: 50px 0;
 }
 

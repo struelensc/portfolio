@@ -1,12 +1,12 @@
-* {
-    font-family: 'Courier New', Courier, monospace;
+ html {
     font-size: 62.5%;
 }
 
 body {
+    font-family: 'Courier New', Courier, monospace;
     line-height: 1.6;
     background-color: #F8EDEB;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 main {
@@ -15,15 +15,15 @@ main {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 h2 {
-    font-size: 2rem;
-}
-
-p {
-    font-size: 1rem;
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0.67em;
+    min-width: 130px;
+    text-align: right;
 }
 
 /* Styling for the header and navigation */
@@ -33,17 +33,55 @@ header {
     align-items: center;
     padding: 2rem;
     justify-content: space-between;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 nav ul {
     display: flex;
     justify-content: space-between;
-    min-width: 25rem;
+    min-width: 30rem;
+}
+
+nav ul li {
+    font-size: 2rem;
+    position: relative;
+}
+
+.aboutLink::after, 
+.worksLink::after {
+    content: "/";
+    position: absolute;
+    right: -3rem;
+}
+
+/* General section styling */
+
+section {
+    margin-top: 5rem;
+    display: flex;
+}
+
+.sectionContent {
+    padding-left: 3rem;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-image: 
+        linear-gradient(
+            to bottom,
+            #29282A,
+            rgba(0, 0, 0, 0)
+        ) 1 100%;
 }
 
 /* Styling for the about content */
 
-.aboutContent {
+#aboutContent {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +92,8 @@ nav ul {
 }
 
 .profilePhotoContainer {
-    flex-basis: 125%;
+    flex-basis: 40%;
+    flex-shrink: 0;
 }
 
 .aboutText {
@@ -73,25 +112,41 @@ img {
     height: auto;
 }
 
+/* Styling for the contact section */
+
+
+
 /* Styling for different screen sizes */
 
 @media screen and (max-width: 768px) {    
     main,
-    header {
+    header,
+    section {
         flex-direction: column;
     }
 
-    .aboutContent {
-        display: block;
+    nav ul {
+        min-width: 25rem;
     }
 
-    nav ul {
-        min-width: 20rem;
+    .aboutLink::after, 
+    .worksLink::after {
+        right: -1.7rem;
     }
+
+    h2 {
+        text-align: left;
+    }
+    
 }
 
 @media screen and (max-width: 992px) {
-    .aboutContent {
+    main {
+        width: 98%;
+    }
+
+    .sectionContent {
         display: block;
+        flex-direction: column;
     }
 }

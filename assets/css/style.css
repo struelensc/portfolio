@@ -1,25 +1,42 @@
 * {
     font-family: 'Courier New', Courier, monospace;
+    font-size: 62.5%;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
     line-height: 1.6;
     background-color: #F8EDEB;
+    font-size: 1.5rem;
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 3rem;
 }
 
 h2 {
-    font-size: 1.5em;
-    font-weight: 400;
+    font-size: 2rem;
 }
 
 p {
-    font-size: 1em;
+    font-size: 1rem;
+}
+
+main {
+    width: 67%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 20rem;
 }
 
 .profilePhoto {
@@ -27,28 +44,26 @@ p {
     height: auto;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    padding: 2%;
-    justify-content: space-between;
+img {
+    max-width: 30%;
+    height: auto;
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    min-width: 300px;
-    font-size: 1.2em;
+.bigImage {
+    max-width: 100%;
+    height: auto;
 }
 
-.container {
-    position: relative;
-    margin: 0 auto;
-    max-width: 900px;
+@media screen and (max-width: 768px) {
+    main {
+        width: 98%;
+    }
+    
+    header {
+        flex-direction: column;
+    }
 }
 
-section {
-    padding: 100px 10px;
-    margin: 50px 0;
-}
+@media screen and (max-width: 992px) {
 
+}

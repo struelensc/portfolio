@@ -9,6 +9,11 @@ body {
     font-size: 1.5rem;
 }
 
+main {
+    width: 67%;
+    margin: 0 auto;
+}
+
 h1 {
     font-size: 3rem;
 }
@@ -21,10 +26,7 @@ p {
     font-size: 1rem;
 }
 
-main {
-    width: 67%;
-    margin: 0 auto;
-}
+/* Styling for the header and navigation */
 
 header {
     display: flex;
@@ -36,34 +38,60 @@ header {
 nav ul {
     display: flex;
     justify-content: space-between;
-    min-width: 20rem;
+    min-width: 25rem;
+}
+
+/* Styling for the about content */
+
+.aboutContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .profilePhoto {
-    max-width: 35%;
-    height: auto;
+    max-width: 100%;
 }
+
+.profilePhotoContainer {
+    flex-basis: 125%;
+}
+
+.aboutText {
+    padding-left: 20px;
+}
+
+/* Styling for the works content */
 
 img {
     max-width: 30%;
     height: auto;
 }
 
-.bigImage {
+.highlightedProject {
     max-width: 100%;
     height: auto;
 }
 
-@media screen and (max-width: 768px) {
-    main {
-        width: 98%;
-    }
-    
+/* Styling for different screen sizes */
+
+@media screen and (max-width: 768px) {    
+    main,
     header {
         flex-direction: column;
+    }
+
+    .aboutContent {
+        display: block;
+    }
+
+    nav ul {
+        min-width: 20rem;
     }
 }
 
 @media screen and (max-width: 992px) {
-
+    .aboutContent {
+        display: block;
+    }
 }

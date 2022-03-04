@@ -10,7 +10,7 @@ body {
 }
 
 main {
-    width: 67%;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -49,15 +49,19 @@ nav ul {
 }
 
 nav ul li {
-    font-size: 2rem;
+    font-size: 1.6rem;
     position: relative;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
 }
 
 .aboutLink::after, 
 .worksLink::after {
     content: "/";
     position: absolute;
-    right: -3rem;
+    right: -4rem;
 }
 
 /* General section styling */
@@ -68,6 +72,8 @@ section {
 }
 
 .sectionContent {
+    display: flex;
+    align-items: center;
     padding-left: 3rem;
     border-left-width: 1px;
     border-left-style: solid;
@@ -83,16 +89,15 @@ section {
 
 #aboutContent {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
 .profilePhoto {
-    max-width: 100%;
+    max-width: 95%;
 }
 
 .profilePhotoContainer {
-    flex-basis: 40%;
+    flex-basis: 30%;
     flex-shrink: 0;
 }
 
@@ -102,51 +107,83 @@ section {
 
 /* Styling for the works content */
 
+.workPhotos {
+    display: block;
+}
+
 img {
     max-width: 30%;
     height: auto;
 }
 
 .highlightedProject {
-    max-width: 100%;
+    max-width: 95%;
     height: auto;
 }
 
 /* Styling for the contact section */
 
+.sectionContent ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 50rem;
+    align-items: center;
+}
 
+.github:hover,
+.linkedin:hover,
+.email:hover {
+    text-decoration: underline;
+}
+
+.contactList img {
+    padding-left: 0.5rem;
+}
+
+/* Styling for the footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 70%;
+    padding: 4rem 0 2rem 0;
+}
 
 /* Styling for different screen sizes */
 
-@media screen and (max-width: 768px) {    
+@media screen and (max-width: 992px) {
     main,
     header,
     section {
         flex-direction: column;
+        width: 95%;
     }
 
+    h2 {
+        text-align: left;
+    } 
+
+    .sectionContent {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {    
     nav ul {
         min-width: 25rem;
     }
 
     .aboutLink::after, 
     .worksLink::after {
-        right: -1.7rem;
-    }
-
-    h2 {
-        text-align: left;
-    }
-    
+        right: -3rem;
+    }   
 }
 
-@media screen and (max-width: 992px) {
-    main {
-        width: 98%;
-    }
-
-    .sectionContent {
-        display: block;
-        flex-direction: column;
+@media screen and (max-width: 576px) {
+    body {
+        width: 550px;
+        margin: 0;
     }
 }

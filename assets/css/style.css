@@ -1,4 +1,6 @@
- :root {
+/* General styling */
+
+:root {
      --darker: #F8EDEB;
      --lighter: #FCF6F5;
      --green: #D8E2DC;
@@ -6,7 +8,7 @@
      --textcolor: #29282A;
  }
  
- html {
+html {
     font-size: 62.5%;
     color: var(--textcolor);
 }

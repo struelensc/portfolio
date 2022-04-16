@@ -142,12 +142,6 @@ figure {
   height: auto;
 }
 
-.highlighted-photo {
-  max-width: 100%;
-  height: auto;
-  border-radius: 2em;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -159,7 +153,7 @@ figcaption {
   bottom: 2em;
   left: 2em;
 
-  padding: 1em 3em;
+  padding: 0.5em 1.5em;
   background-color: var(--darkorange);
   border-radius: 1em;
 

@@ -1,149 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Courtney Struelens</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="./assets/css/reset.css"/>
-        <link rel="stylesheet" href="./assets/css/style.css"/>
-    </head>
+  <head>
+    <title>Courtney Struelens</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
 
-    <body>
+  <body>
+    <!-- Header and navigation -->
+    <header>
+      <h1 class="header">COURTNEY S</h1>
 
-        <!-- Header and navigation -->
-        <header>
-            <h1 class="header">COURTNEY S</h1>
+      <nav>
+        <ul>
+          <li class="aboutLink">
+            <a href="#about">ABOUT</a>
+          </li>
+          <li class="worksLink">
+            <a href="#works">WORK</a>
+          </li>
+          <li class="contactLink">
+            <a href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-            <nav>
-                <ul>
-                    <li class="aboutLink">
-                        <a href="#about">ABOUT</a>
-                    </li>
-                    <li class="worksLink">
-                        <a href="#works">WORK</a>
-                    </li>
-                    <li class="contactLink">
-                        <a href="#contact">CONTACT</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+    <main>
+      <!-- About content -->
+      <section id="about">
+        <div>
+          <h2 class="subheader">ABOUT</h2>
+        </div>
 
-        <main>
-            <!-- About content -->
-            <section id="about">
-                <div>
-                    <h2 class="subheader">ABOUT</h2>
-                </div>
+        <div class="sectionContent" id="aboutContent">
+          <div class="profilePhotoContainer">
+            <img
+              class="profilePhoto"
+              alt="Photo of Courtney"
+              src="./assets/images/Photo_of_Courtney.jpg"
+            />
+          </div>
 
-                <div class="sectionContent" id="aboutContent">
-                    <div class="profilePhotoContainer">
-                        <img class="profilePhoto" alt="Photo of Courtney" src="./assets/images/Photo_of_Courtney.jpg">
-                    </div>
-                    
-                    <div class="aboutText">
-                        <p>I am a physics student taking a full stack web development course.
-                            I thoroughly enjoy problem solving and the balance between creativity and functionality web development offers.
-                            See below for my current projects and how to reach me!
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Works content -->
-            <section id="works">
-                <div>
-                    <h2 class="subheader">WORK</h2>
-                </div>
-
-                <!-- Photos that link to past and current projects -->
-                <div class="sectionContent workPhotos">
-                    <figure class="highlighted-project">
-                        <a href="https://github.com/struelensc/portfolio" target="_blank">
-                            <img
-                                class="highlighted-photo"
-                                src="assets/images/Repo-Images/website.jpg"
-                                alt="Illustration iny developers using shop tools to build a website."
-                            />
-                            <figcaption>Portfolio</figcaption>
-                        </a>
-                    </figure>
-                    
-                    <figure>
-                        <a href="https://github.com/struelensc/password-generator" target="_blank">
-                            <img
-                                src="assets/images/Repo-Images/Sandy_Tech-28_Single-06.jpg"
-                                alt="Illustration of two developers working on their laptops."
-                            />
-                            <figcaption>Password Generator</figcaption>
-                        </a>
-                    </figure>             
-                    
-                    <figure>
-                        <a href="https://github.com/struelensc/semantic_markup_refactor" target="_blank">
-                            <img
-                                src="assets/images/Repo-Images/refactor.jpg"
-                                alt="Illustration of a tiny developer using code, HTML, and CSS."
-                            />
-                            <figcaption>Refactoring</figcaption>
-                        </a>
-                    </figure>
-
-                    <figure>
-                        <a href="https://tapas.io/episode/1917382" target="_blank">
-                            <img
-                                src="assets/images/Repo-Images/19199024.jpg"
-                                alt="Illustration of a tiny developer coding for cross-platform viewing."
-                            />
-                            <figcaption>Placeholder - Mystery Link</figcaption>
-                        </a>
-                    </figure>
-                    
-                    <figure>
-                        <a href="https://www.youtube.com/watch?v=SV00jQZEFCU" target="_blank">
-                            <img
-                                src="assets/images/Repo-Images/Wavy_Tech-28_Single-06.jpg"
-                                alt="Illustration of a team of developers working on a website."
-                            />
-                            <figcaption>Placeholder - Mystery Link</figcaption>
-                        </a>
-                    </figure>
-                </div>
-            </section>
-
-            <!-- Contact content -->
-            <section id="contact">
-                <div>
-                    <h2 class="subheader">CONTACT</h2>
-                </div>
-
-                <div class="sectionContent contactList">
-                    <ul>
-                        <li>
-                            <a class="github" href="https://github.com/struelensc" target="_blank">
-                                Github<img src="assets/images/Icons/394187_github_icon (1).png" alt="Github icon">
-                            </a>
-                        </li>
-                        <li>
-                            <a class="linkedin" href="https://www.linkedin.com/in/courtney-struelens-668a29167/" target="_blank">
-                                LinkedIn<img src="assets/images/Icons/104452_linkedin_icon (1).png" alt="LinkedIn icon">
-                            </a>
-                        </li>
-                        <li>
-                            <a class="email" href="mailto: courtneystruelens@hotmail.com" target="_blank">
-                                Email<img src="assets/images/Icons/1181205_gmail_google_mail_icon (2).png" alt="Email icon">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </main>
-
-        <!-- Footer -->
-        <footer>
-            <p>Copyright @ 2022</p>
-            <p>All vector photos designed by <a href="http://www.freepik.com">vectorjuice / Freepik</a>
+          <div class="aboutText">
+            <p>
+              I am a physics student taking a full stack web development course.
+              I thoroughly enjoy problem solving and the balance between
+              creativity and functionality web development offers. See below for
+              my current projects and how to reach me!
             </p>
-        </footer>
-    </body>
+          </div>
+        </div>
+      </section>
+
+      <!-- Works content -->
+      <section id="works">
+        <div>
+          <h2 class="subheader">WORK</h2>
+        </div>
+
+        <!-- Photos that link to past and current projects -->
+        <div class="sectionContent workPhotos">
+          <figure class="highlighted-project">
+            <a href="https://github.com/struelensc/portfolio" target="_blank">
+              <img
+                class="highlighted-photo"
+                src="assets/images/Repo-Images/website.jpg"
+                alt="Illustration iny developers using shop tools to build a website."
+              />
+              <figcaption>Portfolio</figcaption>
+            </a>
+          </figure>
+
+          <figure>
+            <a
+              href="https://github.com/struelensc/password-generator"
+              target="_blank"
+            >
+              <img
+                src="assets/images/Repo-Images/Sandy_Tech-28_Single-06.jpg"
+                alt="Illustration of two developers working on their laptops."
+              />
+              <figcaption>Password Generator</figcaption>
+            </a>
+          </figure>
+
+          <figure>
+            <a
+              href="https://github.com/struelensc/semantic_markup_refactor"
+              target="_blank"
+            >
+              <img
+                src="assets/images/Repo-Images/refactor.jpg"
+                alt="Illustration of a tiny developer using code, HTML, and CSS."
+              />
+              <figcaption>Refactoring</figcaption>
+            </a>
+          </figure>
+
+          <figure>
+            <a href="https://tapas.io/episode/1917382" target="_blank">
+              <img
+                src="assets/images/Repo-Images/19199024.jpg"
+                alt="Illustration of a tiny developer coding for cross-platform viewing."
+              />
+              <figcaption>Placeholder - Mystery Link</figcaption>
+            </a>
+          </figure>
+
+          <figure>
+            <a
+              href="https://www.youtube.com/watch?v=SV00jQZEFCU"
+              target="_blank"
+            >
+              <img
+                src="assets/images/Repo-Images/Wavy_Tech-28_Single-06.jpg"
+                alt="Illustration of a team of developers working on a website."
+              />
+              <figcaption>Placeholder - Mystery Link</figcaption>
+            </a>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Contact content -->
+      <section id="contact">
+        <div>
+          <h2 class="subheader">CONTACT</h2>
+        </div>
+
+        <div class="sectionContent contactList">
+          <ul>
+            <li>
+              <a
+                class="icon"
+                href="https://github.com/struelensc"
+                target="_blank"
+              >
+                Github<img
+                  src="assets/images/Icons/394187_github_icon (1).png"
+                  alt="Github icon"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                class="icon"
+                href="https://www.linkedin.com/in/courtney-struelens-668a29167/"
+                target="_blank"
+              >
+                LinkedIn<img
+                  src="assets/images/Icons/104452_linkedin_icon (1).png"
+                  alt="LinkedIn icon"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                class="icon"
+                href="mailto: courtneystruelens@hotmail.com"
+                target="_blank"
+              >
+                Email<img
+                  src="assets/images/Icons/1181205_gmail_google_mail_icon (2).png"
+                  alt="Email icon"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                class="icon"
+                href="./assets/files/Resume 2022.pdf"
+                target="_blank"
+              >
+                Resume<img
+                  src="./assets/images/Icons/8673145_ic_fluent_document_pdf_filled_icon.png"
+                  alt="Resume icon"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>Copyright @ 2022</p>
+      <p>
+        All vector photos designed by
+        <a target="_blank" href="http://www.freepik.com"
+          >vectorjuice / Freepik</a
+        >
+      </p>
+    </footer>
+  </body>
 </html>

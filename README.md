@@ -16,4 +16,4 @@ See below for a screenshot and a link to the deployed web page.
 
 https://struelensc.github.io/portfolio/
 
-![portfolio webpage screenshot](./assets/images/website-screenshot.png)
+![portfolio webpage screenshot](./assets/images/struelensc.github.io_portfolio.png)

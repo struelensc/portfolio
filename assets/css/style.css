@@ -11,6 +11,8 @@
 html {
   font-size: 62.5%;
   color: var(--lighter);
+  scroll-snap-type: y proximity;
+  overflow-y: scroll;
 }
 
 body {
@@ -53,6 +55,8 @@ a:hover {
 /* Styling for the header and navigation */
 
 header {
+  scroll-snap-align: start;
+
   margin: 0 auto;
   padding: 4rem 2rem;
 
@@ -90,6 +94,10 @@ nav ul li:hover {
 
 /* Styling for the about content */
 
+#about {
+  min-height: calc(100vh - 146px);
+}
+
 #aboutContent h2 {
   font-size: 70px;
 }
@@ -113,6 +121,11 @@ nav ul li:hover {
 
 /* Styling skills section */
 
+#skills {
+  scroll-snap-align: start;
+  min-height: 100vh;
+}
+
 #skills h2 {
   font-size: 56px;
 }
@@ -130,8 +143,6 @@ nav ul li:hover {
   color: var(--pink);
 }
 
-/* Styling for the contact section */
-
 .icon:hover {
   text-decoration: underline;
 }
@@ -142,6 +153,10 @@ nav ul li:hover {
 }
 
 /* Styling for the works content */
+
+#works {
+  scroll-snap-align: start;
+}
 
 #works h2 {
   font-size: 56px;
@@ -199,7 +214,7 @@ footer {
 
 @media screen and (max-width: 992px) {
   header h1 {
-    font-size: 24px;
+    font-size: 17px;
   }
 
   main,
@@ -212,6 +227,6 @@ footer {
   }
 
   #works {
-    height: fit-content;
+    min-height: fit-content;
   }
 }

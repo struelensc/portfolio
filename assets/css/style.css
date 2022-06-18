@@ -42,10 +42,13 @@ p {
   color: var(--lighter);
 }
 
-a,
-a:hover {
+a {
   text-decoration: none;
   color: var(--lighter);
+}
+
+a:hover {
+  color: var(--pink);
 }
 
 .pink {
@@ -89,7 +92,7 @@ nav ul li {
 
 nav ul li:hover {
   text-decoration: none;
-  color: var(--darkorange);
+  color: var(--pink);
 }
 
 /* Styling for the about content */
@@ -141,10 +144,6 @@ nav ul li:hover {
 
 #skills li:hover {
   color: var(--pink);
-}
-
-.icon:hover {
-  text-decoration: underline;
 }
 
 .contactList img {

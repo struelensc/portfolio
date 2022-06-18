@@ -4,7 +4,7 @@ I made this to be a portfolio to house all my current and ongoing web developmen
 
 ## Purpose
 
-The purpose of this project was not only to create a space to house links to my project but also to practice using HTML and CSS by building a webpage from scratch.
+The purpose of this project was not only to create a space to house links to my projects but also to practice using HTML and CSS by building a portfolio from scratch.
 
 ## Goal
 
@@ -16,4 +16,4 @@ See below for a screenshot and a link to the deployed web page.
 
 https://struelensc.github.io/portfolio/
 
-![portfolio webpage screenshot](./assets/images/struelensc.github.io_portfolio.png)
+![portfolio webpage screenshot](./assets/images/portfolio_index.html.png)

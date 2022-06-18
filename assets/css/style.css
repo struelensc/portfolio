@@ -1,148 +1,162 @@
 /* General styling */
 
 :root {
-  --darker: #f8edeb;
+  --pink: #fec5bb;
   --lighter: #fcf6f5;
   --green: #d8e2dc;
-  --darkorange: #ffd7ba;
-  --textcolor: #29282a;
+  --darkorange: #fec89a;
+  --dark: #172a3a;
 }
 
 html {
   font-size: 62.5%;
-  color: var(--textcolor);
+  color: var(--lighter);
 }
 
 body {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Roboto", sans-serif;
   line-height: 1.6;
-  background-color: var(--darker);
-  font-size: 1.6rem;
+  background-color: var(--dark);
+  font-size: 19px;
 }
 
 main {
-  max-width: 75vw;
+  max-width: 90vw;
   margin: 0 auto;
-  background-color: var(--lighter);
   padding: 2rem;
 }
 
 h1 {
-  font-size: 4rem;
   letter-spacing: 1rem;
+  color: var(--lighter);
+  font-size: 70px;
 }
 
 h2 {
-  font-size: 3rem;
-  margin: 0.67em;
-  min-width: 130px;
-  text-align: right;
+  color: var(--lighter);
 }
 
-a {
-  text-decoration: none;
-  color: var(--textcolor);
+p {
+  color: var(--lighter);
 }
 
+a,
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: var(--lighter);
+}
+
+.pink {
+  color: var(--pink);
 }
 
 /* Styling for the header and navigation */
 
 header {
   margin: 0 auto;
-  max-width: 75vw;
   padding: 4rem 2rem;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  background-color: var(--green);
   border-bottom: var(--darkorange) 0.5rem solid;
+}
+
+header h1 {
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 nav ul {
   display: flex;
   justify-content: space-between;
   min-width: 35rem;
+  padding: 0;
+  list-style-type: none;
 }
 
 nav ul li {
   position: relative;
-  font-weight: 600;
   letter-spacing: 0.5rem;
+  font-size: 19px;
 }
 
 nav ul li:hover {
-  text-decoration: underline;
-}
-
-.aboutLink::after,
-.worksLink::after {
-  content: "/";
-  position: absolute;
-  right: -4rem;
-}
-
-/* General section styling */
-
-section {
-  margin-top: 5rem;
-  display: flex;
-}
-
-.sectionContent {
-  display: flex;
-  align-items: center;
-  padding-left: 3rem;
-  border-left-width: 1px;
-  border-left-style: solid;
-  border-image: linear-gradient(to bottom, var(--textcolor), rgba(0, 0, 0, 0)) 1
-    100%;
+  text-decoration: none;
+  color: var(--darkorange);
 }
 
 /* Styling for the about content */
 
-#aboutContent {
-  display: flex;
-  align-items: center;
+#aboutContent h2 {
+  font-size: 70px;
 }
 
+#aboutContent p {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.vectorContainer img,
 .profilePhoto {
-  max-width: 95%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 2em;
 }
 
+.vectorContainer,
 .profilePhotoContainer {
-  flex-basis: 30%;
-  flex-shrink: 0;
+  max-height: 100%;
 }
 
-.aboutText {
-  padding-left: 20px;
+/* Styling skills section */
+
+#skills h2 {
+  font-size: 56px;
+}
+
+#skills ul {
+  list-style: none;
+}
+
+#skills li {
+  font-size: 19px;
+  color: var(--lighter);
+}
+
+#skills li:hover {
+  color: var(--pink);
+}
+
+/* Styling for the contact section */
+
+.icon:hover {
+  text-decoration: underline;
+}
+
+.contactList img {
+  padding-left: 0.5rem;
+  background-color: var();
 }
 
 /* Styling for the works content */
 
-.workPhotos {
-  display: block;
+#works h2 {
+  font-size: 56px;
+}
+
+#works h3 {
+  color: var(--lighter);
+  font-size: 30px;
 }
 
 figure {
-  display: inline-block;
-  max-width: 45%;
-  height: auto;
-  margin: 0;
   position: relative;
 }
 
-.highlighted-project {
-  max-width: 90%;
-  height: auto;
-}
-
-img {
+figure img {
   max-width: 100%;
   height: auto;
   border-radius: 2em;
@@ -152,34 +166,18 @@ figcaption {
   position: absolute;
   bottom: 2em;
   left: 2em;
+  color: var(--dark);
+  font-weight: 600;
 
   padding: 0.5em 1.5em;
   background-color: var(--darkorange);
   border-radius: 1em;
-
-  font-weight: 600;
 }
 
 figure a:hover figcaption {
   background-color: #fec89a;
+  transition: all 0.3s ease-in-out;
   transform: scale(1.1);
-}
-
-/* Styling for the contact section */
-
-.sectionContent ul {
-  display: flex;
-  justify-content: space-between;
-  min-width: 50rem;
-  align-items: center;
-}
-
-.icon:hover {
-  text-decoration: underline;
-}
-
-.contactList img {
-  padding-left: 0.5rem;
 }
 
 /* Styling for the footer */
@@ -191,17 +189,19 @@ footer {
   justify-content: center;
 
   margin: 0 auto;
-  max-width: 75vw;
   padding: 4rem 2rem;
 
   text-align: center;
-  background-color: var(--green);
   border-top: var(--darkorange) 0.5rem solid;
 }
 
 /* Styling for different screen sizes */
 
 @media screen and (max-width: 992px) {
+  header h1 {
+    font-size: 24px;
+  }
+
   main,
   header,
   section,
@@ -211,38 +211,7 @@ footer {
     margin: 0;
   }
 
-  h2 {
-    text-align: left;
-    padding: 0;
-  }
-
-  .sectionContent {
-    flex-direction: column;
-  }
-
-  figure {
-    display: flex;
-  }
-
-  .highlighted-project,
-  figure {
-    max-width: 95%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  nav ul {
-    min-width: 30rem;
-  }
-
-  .aboutLink::after,
-  .worksLink::after {
-    right: -2.5rem;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .sectionContent ul {
-    flex-direction: column;
+  #works {
+    height: fit-content;
   }
 }

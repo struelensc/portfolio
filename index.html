@@ -5,24 +5,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
   <body>
     <!-- Header and navigation -->
     <header>
-      <h1 class="header">COURTNEY S</h1>
+      <h1 class="px-5">
+        <span class="pink"><</span>
+        <span>Courtney S</span>
+        <span class="pink">/></span>
+      </h1>
 
-      <nav>
+      <nav class="px-5">
         <ul>
-          <li class="aboutLink">
-            <a href="#about">ABOUT</a>
+          <li>
+            <a href="#about">about</a>
           </li>
-          <li class="worksLink">
-            <a href="#works">WORK</a>
+          <li>
+            <a href="#skills">skills</a>
           </li>
-          <li class="contactLink">
-            <a href="#contact">CONTACT</a>
+          <li>
+            <a href="#works">work</a>
           </li>
         </ul>
       </nav>
@@ -30,167 +46,235 @@
 
     <main>
       <!-- About content -->
-      <section id="about">
-        <div>
-          <h2 class="subheader">ABOUT</h2>
-        </div>
+      <section class="row py-5" id="about">
+        <div class="row d-flex align-items-center">
+          <div class="col-sm-8 px-5" id="aboutContent">
+            <h2>Hello!</h2>
 
-        <div class="sectionContent" id="aboutContent">
-          <div class="profilePhotoContainer">
+            <p>
+              I am a physics student taking a full stack web development
+              bootcamp. I thoroughly enjoy problem solving and the balance
+              between creativity and functionality web development offers.
+            </p>
+
+            <div class="contactList">
+              <ul class="list-group list-group-horizontal-sm py-4 flex-wrap">
+                <!-- Github -->
+                <li class="px-4">
+                  <a
+                    class="icon"
+                    href="https://github.com/struelensc"
+                    target="_blank"
+                  >
+                    Github
+                    <img
+                      src="assets/images/Icons/github.png"
+                      alt="Github icon"
+                    />
+                  </a>
+                </li>
+                <!-- LinkedIn -->
+                <li class="px-4">
+                  <a
+                    class="icon"
+                    href="https://www.linkedin.com/in/courtney-struelens/"
+                    target="_blank"
+                  >
+                    LinkedIn
+                    <img
+                      src="assets/images/Icons/linkedin.png"
+                      alt="LinkedIn icon"
+                    />
+                  </a>
+                </li>
+                <!-- Email -->
+                <li class="px-4">
+                  <a
+                    class="icon"
+                    href="mailto: courtneystruelens@hotmail.com"
+                    target="_blank"
+                  >
+                    Email
+                    <img src="assets/images/Icons/gmail.png" alt="Email icon" />
+                  </a>
+                </li>
+                <!-- Resume -->
+                <li class="px-4">
+                  <a
+                    class="icon"
+                    href="./assets/files/Resume 2022.pdf"
+                    target="_blank"
+                  >
+                    Resume
+                    <img
+                      src="./assets/images/Icons/pdf-file.png"
+                      alt="Resume icon"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-4 profilePhotoContainer">
             <img
               class="profilePhoto"
               alt="Photo of Courtney"
               src="./assets/images/Photo_of_Courtney.jpg"
             />
           </div>
+        </div>
+      </section>
 
-          <div class="aboutText">
-            <p>
-              I am a physics student taking a full stack web development course.
-              I thoroughly enjoy problem solving and the balance between
-              creativity and functionality web development offers. See below for
-              my current projects and how to reach me!
-            </p>
+      <section
+        class="row py-5 d-flex flex-row-reverse align-items-center"
+        id="skills"
+      >
+        <div class="col-sm-7">
+          <h2 class="p-5">What I know</h2>
+
+          <div class="px-5">
+            <ul class="list-group list-group-horizontal flex-wrap">
+              <li class="text-center mx-4">
+                <i class="fab fa-html5 fa-3x"></i>
+                <p>html-5</p>
+              </li>
+              <li class="text-center mx-4">
+                <i class="fab fa-css3-alt fa-3x"></i>
+                <p>css</p>
+              </li>
+              <li class="text-center mx-4">
+                <i class="fa-brands fa-bootstrap fa-3x"></i>
+                <p>bootstrap</p>
+              </li>
+              <li class="text-center mx-4">
+                <i class="fab fab fa-js fa-3x"></i>
+                <p>Javascript</p>
+              </li>
+              <li class="text-center mx-4">
+                <i class="fab fab fa-node fa-3x"></i>
+                <p>nodejs</p>
+              </li>
+              <li class="text-center mx-4">
+                <i class="fab fab fa-npm fa-3x"></i>
+                <p>npm</p>
+              </li>
+              <li class="text-center mx-4">
+                <i class="fab fas fa-database fa-3x"></i>
+                <p>sql-database</p>
+              </li>
+              <li class="text-center mx-4">
+                <i class="fa-brands fa-git fa-3x"></i>
+                <p>git</p>
+              </li>
+            </ul>
           </div>
+        </div>
+
+        <div class="col-sm-5 vectorContainer">
+          <img
+            src="./assets/images/Wavy_Bus-20_Single-04 [Converted].png"
+            alt="female programmer"
+          />
         </div>
       </section>
 
       <!-- Works content -->
-      <section id="works">
-        <div>
-          <h2 class="subheader">WORK</h2>
-        </div>
+      <section class="p-5" id="works">
+        <h2>What I've been working on</h2>
 
-        <!-- Photos that link to past and current projects -->
-        <div class="sectionContent workPhotos">
-          <!-- StarParty -->
-          <figure class="highlighted-project">
-            <a href="https://github.com/struelensc/StarParty" target="_blank">
+        <div class="row d-flex flex-row-reverse">
+          <!-- Ben's Diner -->
+          <div
+            class="col-lg-4 d-flex justify-content-center align-items-center"
+          >
+            <div class="container">
+              <h3 class="d-block">Ben's Diner</h3>
+              <p class="d-block">
+                Created a full stack web page application that allows restaurant
+                customers to view a digital menu, and order food without a human
+                server interface. Menu items are displayed and added to a
+                shopping cart on click, with routes navigating various button
+                events. The temporary shopping cart will save data using local
+                storage. The permanent order history will available in a MySQL
+                database.
+              </p>
+            </div>
+          </div>
+
+          <figure class="col-lg-8 highlighted-project">
+            <a href="https://github.com/wonjong2/Bens_Diner" target="_blank">
               <img
                 class="img"
-                src="./assets/images/project-screenshots/StarParty_landing_page.png"
-                alt="Screenshot of StarParty website"
+                src="./assets/images/project-screenshots/bens-diner.herokuapp.com_.png"
+                alt="Screenshot of Ben's Diner website"
               />
-              <figcaption>StarParty</figcaption>
-            </a>
-          </figure>
-
-          <!-- Weather Dashboard -->
-          <figure>
-            <a
-              href="https://github.com/struelensc/weather-dashboard"
-              target="_blank"
-            >
-              <img
-                src="./assets/images/project-screenshots/struelensc.github.io_weather-dashboard.png"
-                alt="Screenshot of weather dashboard website"
-              />
-              <figcaption>Weather Dashboard</figcaption>
-            </a>
-          </figure>
-
-          <!-- Code Quiz -->
-          <figure>
-            <a href="https://github.com/struelensc/code-quiz" target="_blank">
-              <img
-                src="./assets/images/project-screenshots/struelensc.github.io_code-quiz_.png"
-                alt="Screenshot of code quiz website"
-              />
-              <figcaption>Code Quiz</figcaption>
-            </a>
-          </figure>
-
-          <!-- Work Day Scheduler -->
-          <figure>
-            <a
-              href="https://github.com/struelensc/work-day-planner"
-              target="_blank"
-            >
-              <img
-                src="./assets/images/project-screenshots/struelensc.github.io_work-day-planner.png"
-                alt="Screenshot of work day scheduler"
-              />
-              <figcaption>Work Day Scheduler</figcaption>
-            </a>
-          </figure>
-
-          <!-- Password Generator -->
-          <figure>
-            <a
-              href="https://github.com/struelensc/password-generator"
-              target="_blank"
-            >
-              <img
-                src="./assets/images/project-screenshots/struelensc.github.io_password-generator.png"
-                alt="Screenshot of password genreator website"
-              />
-              <figcaption>Password Generator</figcaption>
             </a>
           </figure>
         </div>
-      </section>
 
-      <!-- Contact content -->
-      <section id="contact">
         <div>
-          <h2 class="subheader">CONTACT</h2>
-        </div>
+          <h3 class="pt-5 px-5">Other projects</h3>
 
-        <div class="sectionContent contactList">
-          <ul>
-            <!-- Github -->
-            <li>
+          <div class="row">
+            <!-- mvc-tech-blog -->
+            <figure class="col-md-6">
               <a
-                class="icon"
-                href="https://github.com/struelensc"
+                href="https://github.com/struelensc/mvc-tech-blog"
                 target="_blank"
               >
-                Github<img
-                  src="assets/images/Icons/394187_github_icon (1).png"
-                  alt="Github icon"
+                <img
+                  src="./assets/images/project-screenshots/mvc-tech-blog-09493.herokuapp.com_.png"
+                  alt="Screenshot of mvc-tech-blog website"
                 />
+                <figcaption>Tech Blog</figcaption>
               </a>
-            </li>
-            <!-- LinkedIn -->
-            <li>
+            </figure>
+
+            <!-- orm-ecomm-backend -->
+            <figure class="col-md-6">
               <a
-                class="icon"
-                href="https://www.linkedin.com/in/courtney-struelens/"
+                href="https://github.com/struelensc/orm-ecomm-backend"
                 target="_blank"
               >
-                LinkedIn<img
-                  src="assets/images/Icons/104452_linkedin_icon (1).png"
-                  alt="LinkedIn icon"
+                <img
+                  src="./assets/images/project-screenshots/orm-ecomm-backend.png"
+                  alt="Screenshot of orm routes"
                 />
+                <figcaption>ORM Ecommerce Backend</figcaption>
               </a>
-            </li>
-            <!-- Email -->
-            <li>
+            </figure>
+          </div>
+
+          <div class="row">
+            <!-- express-note-taker -->
+            <figure class="col-md-6">
               <a
-                class="icon"
-                href="mailto: courtneystruelens@hotmail.com"
+                href="https://github.com/struelensc/express-note-taker"
                 target="_blank"
               >
-                Email<img
-                  src="assets/images/Icons/1181205_gmail_google_mail_icon (2).png"
-                  alt="Email icon"
+                <img
+                  src="./assets/images/project-screenshots/express-note-taker-7913.herokuapp.com_notes.png"
+                  alt="Screenshot of express-note-taker"
                 />
+                <figcaption>Express Note Taker</figcaption>
               </a>
-            </li>
-            <!-- Resume -->
-            <li>
+            </figure>
+
+            <!-- team-profile-generator -->
+            <figure class="col-md-6">
               <a
-                class="icon"
-                href="./assets/files/Resume 2022.pdf"
+                href="https://github.com/struelensc/team-profile-generator"
                 target="_blank"
               >
-                Resume<img
-                  src="./assets/images/Icons/8673145_ic_fluent_document_pdf_filled_icon.png"
-                  alt="Resume icon"
+                <img
+                  src="./assets/images/project-screenshots/team-profile-generator_Sample_index.html.png"
+                  alt="Screenshot of team-profile-generator website"
                 />
+                <figcaption>Team Profile Generator</figcaption>
               </a>
-            </li>
-          </ul>
+            </figure>
+          </div>
         </div>
       </section>
     </main>
@@ -204,6 +288,26 @@
           >vectorjuice / Freepik</a
         >
       </p>
+
+      <div>
+        <p>
+          Icons made by
+          <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from
+          <a href="https://www.flaticon.com/" title="Flaticon"
+            >www.flaticon.com</a
+          >
+        </p>
+      </div>
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/f16e98cafb.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
